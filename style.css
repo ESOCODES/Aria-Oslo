@@ -114,3 +114,113 @@ a:hover  {
 a.active {
     color: blue;
 }
+
+
+
+
+input, textarea {
+    width: 100%;
+    background-color: black;
+    border: 2px solid #ffffffff;
+    color: #ffffffff;
+    padding: 8px 16px 8px 16px;
+
+}
+
+label {
+    text-align: left;
+    display: block;
+    margin:40px 0px 0px 0px;
+}
+
+
+textarea{
+    height: 320px;
+}
+
+button{
+    color: #deb8a7;
+    border: none;
+    font-size: 24px;
+    font-family: "Nunito Sans", sans-serif;
+    padding: 8px 16px 8px 16px;
+}
+
+
+input: focus, textarea:focus{
+    border: 2px solid #fffff;
+    outline:none;
+}
+
+
+
+
+
+@media (max-width: 1248px) {
+    body{
+       width: auto;
+       margin: 80px 64px 48px 64px;
+    }
+
+    h1, nav, footer {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 920px) {
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        margin: 32px 0 0 0;
+    }
+
+    header img {
+        max-width: 300px;
+    }
+
+    header a {
+        margin: 0 16px 0 16px;
+    }
+
+}
+
+
+@media (max-width: 660px) {
+    section{
+        grid-template-columns: repeat(4, 1fr);
+        gap:24px 24px;
+    }
+
+    section h1, 
+    section.project div.artwork, 
+    section.project div.description,
+    section.about div.headshot,
+    section.about div.description,
+    section.contact div.form {
+        grid-column: 1 / span 4;
+       
+    }
+}
+
+
+@media (max-width: 500px)
+{
+   body{
+    margin: 24px 24px 24px 24px;
+   }
+   
+    header img {
+        max-width: 100%;
+
+    }
+
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+}
